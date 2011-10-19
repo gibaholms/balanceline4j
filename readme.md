@@ -240,6 +240,7 @@ public class SimpleCollectionBalanceLineExample {
 ##### 2 - Convencional Solution vs. BalanceLine4j Solution Example <a id="example-2"/> #####
 
 This sample is about a benchmark scenario that compares the convencional (dummy) solution against the BalanceLine4j solution. Some considerations about the sample:
+
 * Master File: a database table named "CUSTOMER"
 * Transaction File: a positional text file named "sample_customers_file.txt" containing the very changes
 * Key: is used the customer ID, that is the primary key of the table and the first field of the flat file
@@ -248,6 +249,7 @@ This sample is about a benchmark scenario that compares the convencional (dummy)
 * The sample code is "one layer" only to facilitate demonstration, but dont forget the patterns in the real implementation
 
 Scenario setup:
+
 1. Install OracleXE database (or other one of your choice, but this sample is Oracle based)
 1. Create one user-schema named "TESTS" with password "TESTS"
 1. Run the create table scripts on file "benchmark-resources/ddl_create_table.sql"
@@ -256,7 +258,6 @@ Scenario setup:
 1. Now you are ready to run the two main benchmark starter files through the main method (MainConventionalSolution.java and MainBalanceLineSolution.java)
 1. Dont forget to erase the table data and insert the sample data again before start the benchmarks, case else the table will be up-to-date
 
-Customer.java
 ```java
 // package and imports omitted
 
@@ -345,7 +346,6 @@ public class Customer {
 }
 ```
 
-CustomerDatabaseBalanceLineSource.java
 ```java
 // package and imports omitted
 
@@ -375,7 +375,6 @@ public class CustomerDatabaseBalanceLineSource extends ResultsetBalanceLineSourc
 }
 ```
 
-CustomerTextBalanceLineSource.java
 ```java
 // package and imports omitted
 
@@ -399,7 +398,6 @@ public class CustomerTextBalanceLineSource extends InputStreamBalanceLineSource<
 }
 ```
 
-CustomerBalanceLineProcessor.java
 ```java
 // package and imports omitted
 
@@ -470,7 +468,6 @@ public class CustomerBalanceLineProcessor implements BalanceLineProcessor<Long, 
 }
 ```
 
-MainBalanceLineSolution.java
 ```java
 // package and imports omitted
 
@@ -539,7 +536,6 @@ public class MainBalanceLineSolution {
 }
 ```
 
-MainConventionalSolution.java
 ```java
 // package and imports omitted
 
