@@ -35,7 +35,15 @@
 			<groupId>org.ffpojo</groupId>
 			<artifactId>ffpojo-core</artifactId>
 			<version>0.1</version>
-			<scope>compile</scope>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/ffpojo-core-0.1.jar</systemPath>
+		</dependency>
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc</artifactId>
+			<version>14</version>
+			<scope>system</scope>
+			<systemPath>${basedir}/lib/ojdbc14.jar</systemPath>
 		</dependency>
 	</dependencies>
 
