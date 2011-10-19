@@ -250,13 +250,13 @@ This sample is about a benchmark scenario that compares the convencional (dummy)
 
 Scenario setup:
 
-1. Install OracleXE database (or other one of your choice, but this sample is Oracle based)
-1. Create one user-schema named "TESTS" with password "TESTS"
-1. Run the create table scripts on file "benchmark-resources/ddl_create_table.sql"
-1. To generate some sample data, run the insert scripts on file "benchmark-resources/sql_insert_into.sql"
-1. Copy the file "benchmark-resources/sample_customers_file.txt" to some location at your disk (dont forget to change the file path references in the java code)
-1. Now you are ready to run the two main benchmark starter files through the main method (MainConventionalSolution.java and MainBalanceLineSolution.java)
-1. Dont forget to erase the table data and insert the sample data again before start the benchmarks, case else the table will be up-to-date
+1. **Install** OracleXE database (or other one of your choice, but this sample is Oracle based)
+1. **Create** one user-schema named "TESTS" with password "TESTS"
+1. **Run** the create table scripts on file **"benchmark-resources/ddl_create_table.sql"**
+1. To generate some **sample data**, run the insert scripts on file **"benchmark-resources/sql_insert_into.sql"**
+1. Copy the file **"benchmark-resources/sample_customers_file.txt"** to some location at your disk (dont forget to change the file path references in the java code)
+1. Now you are ready to run the two main **benchmark starter files** through the main method (**MainConventionalSolution.java** and **MainBalanceLineSolution.java**)
+1. Dont forget to **erase** the table data and insert the sample data again **before start** the benchmarks, case else the table will be up-to-date
 
 ```java
 // package and imports omitted
