@@ -241,11 +241,11 @@ public class SimpleCollectionBalanceLineExample {
 
 This sample is about a benchmark scenario that compares the convencional (dummy) solution against the BalanceLine4j solution. Some considerations about the sample:
 
-* Master File: a database table named "CUSTOMER"
-* Transaction File: a positional text file named "sample_customers_file.txt" containing the very changes
-* Key: is used the customer ID, that is the primary key of the table and the first field of the flat file
-* This sample uses the ffpojo-core-0.1 library to facilitate the text file parsing - see the [project site](https://github.com/gibaholms/ffpojo)
-* This sample also depends on the JDBC driver of the chosen database (this code is Oracle based)
+* **Master File:** a database table named "CUSTOMER"
+* **Transaction File:** a positional text file named "sample_customers_file.txt" containing the very changes
+* **Key:** is used the customer ID, that is the primary key of the table and the first field of the flat file
+* This sample uses the **ffpojo-core-0.1** library to facilitate the text file parsing - see the [project site](https://github.com/gibaholms/ffpojo)
+* This sample also depends on the **JDBC driver** of the chosen database (this code is Oracle based)
 * The sample code is "one layer" only to facilitate demonstration, but dont forget the patterns in the real implementation
 
 Scenario setup:
